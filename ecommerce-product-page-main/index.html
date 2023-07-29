@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>E-commerce product page</title>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="left-header">
+            <a href="#"><img src="./images/logo.svg" alt="sneakers"></a>
+            <nav>
+              <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="right-header">
+            <ul>
+              <li><a href="#"><img src="./images/icon-cart.svg" alt="cart"></a></li>
+              <li>
+                <div class="avatar"><img src="./images/image-avatar.png" alt="avatar"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="product-wrapper">
+      <div class="container">
+        <div class="product">
+          <div class="products-slider">
+            <div class="featured-product-image"><li><img src="./images/image-product-1.jpg" alt="image1"></li>
+              <li><img src="./images/image-product-2.jpg" alt="image2"></li>
+              <li><img src="./images/image-product-3.jpg" alt="image3"></li>
+              <li><img src="./images/image-product-4.jpg" alt="image4"></li>
+            </div>
+            <ul class="scroll">
+              <li class="active"><img src="./images/image-product-1.jpg" alt="image1"></li>
+              <li><img src="./images/image-product-2.jpg" alt="image2"></li>
+              <li><img src="./images/image-product-3.jpg" alt="image3"></li>
+              <li><img src="./images/image-product-4.jpg" alt="image4"></li>
+            </ul>
+          </div>
+          <div class="product-content">
+            <div class="product-discreption">
+              <strong class="sneaker-company">sneaker company</strong>
+              <h1>Fall Limited Edition Sneakers</h1>
+              <p>These low-profile sneakers are your perfect casual wear to companion. featuring a durable rubber outer
+                sole, they'll withstand everything the weather can offer.</p>
+            </div>
+            <form action="#">
+              <div class="discounted-price">
+                <strong>$125.00</strong>
+                <span>50%</span>
+              </div>
+                <span class="original-price">$250.00</span>
+              <div class="counter-wrapper">
+                <div class="counter">
+                  <button>-</button>
+                  <span class="coloring">0</span>
+                  <button>+</button>
+                </div>
+                <div class="add-cart">
+                  <button type="submit"><span><img src="./images/icon-cart.svg" alt="cart"></span> Add to cart </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="app.js" defer></script>
+</body>
+
+</html>

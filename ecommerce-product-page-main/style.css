@@ -1,0 +1,251 @@
+body {
+    background-color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.right-header ul {
+    display: flex;
+    align-items: center;
+}
+
+.right-header ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
+.avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.product-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.products-slider {
+    max-width: 500px;
+}
+
+.featured-product-image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 3%;
+}
+
+.scroll {
+    display: flex;
+    padding-left: 0px;
+    justify-content: space-between;
+}
+
+
+li.active img {
+    border: 3px solid hsl(26, 100%, 55%);
+    opacity: 0.6;
+}
+
+.scroll img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3%;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product-content {
+        margin-left: 100px;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(219, 9%, 45%)
+}
+
+.sneaker-company {
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+.discounted-price {
+    margin-top: 30px;
+}
+
+.discounted-price strong {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.discounted-price span {
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    border-radius: 7%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: hsl(219, 9%, 45%);
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+button {
+    border: none;
+}
+
+.counter {
+    background-color: hsl(223, 64%, 98%);
+    display: flex;
+    max-width: fit-content;
+}
+
+.counter button, .counter span {
+    background-color: hsl(223, 64%, 98%);
+    font-size: 15px;
+    font-weight: bold;
+    color:  hsl(26, 100%, 55%);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.counter span {
+    color: black;
+}
+
+.add-cart button {
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.counter-wrapper {
+    display: flex;
+}
+
+.add-cart button span img {
+    fill: white;
+    width: 14px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 990px){
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+    .product-wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .product-content {
+        margin-left: 50px;
+    }
+
+    .product-discreption {
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    .counter-wrapper {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .products-slider {
+        max-width: 300px;
+    }
+    .left-header {
+        flex-direction: column;
+    }
+    .header {
+        justify-content: center;
+    }
+    .featured-product-image img {
+        width: 100%;
+        height: auto;
+    }
+    .scroll li {
+        margin-right: 10px;
+    }
+    .scroll img {
+        width: 80px;
+        height: auto;
+    }
+}
